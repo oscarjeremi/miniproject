@@ -46,7 +46,7 @@ public class StudentServiceImpl implements StudentService {
         return studentRepository.findAll();
     }
 
-    public Student findByName(String name) {
+    public List<Student> findByName(String name) {
         return studentRepository.findByFullname(name);
     }
 }
